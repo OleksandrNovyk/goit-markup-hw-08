@@ -1,0 +1,40 @@
+.section.special {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.specialities {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--main-text-color);
+  margin-bottom: 10px;
+}
+
+.features-icon {
+  background-color: var(--section-team-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 25px 0;
+}
+
+.features.list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}
+
+.paragraph-title {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--secondary-title-color);
+  margin-bottom: 0;
+}

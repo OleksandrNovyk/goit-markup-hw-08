@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Шапка сайта-->
+    <header class="header">
+      <div class="container header">
+        <a class="logo logo--right" href="./index.html"
+          >Web<span class="logo--black">Studio</span></a
+        >
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-list__link">Студія</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="nav-list__link--current"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-list__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-list__contact" href="mailto:info@devstudio.com">
+              <svg class="icon envelope">
+                <use href="./images/symbol-defs.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-list__contact" href="tel:+380961111111">
+              <svg class="icon smartphone">
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--Герой-->
+    <main>
+      <section class="section-projects">
+        <div class="container">
+          <h1 hidden>Проєкти</h1>
+
+          <ul class="buttons-set">
+            <li class="buttons-set__list">
+              <button class="buttons-set__button" type="button">Усі</button>
+            </li>
+            <li class="buttons-set__list">
+              <button class="buttons-set__button" type="button">
+                Веб-сайти
+              </button>
+            </li>
+            <li class="buttons-set__list">
+              <button class="buttons-set__button" type="button">Додатки</button>
+            </li>
+            <li class="buttons-set__list">
+              <button class="buttons-set__button" type="button">Дизайн</button>
+            </li>
+            <li class="buttons-set__list">
+              <button class="buttons-set__button" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="card-set">
+            <li class="card-set__gallery">
+              <a class="card-set__list" href="https://www.google.com.ua">
+                <div class="hidden-card">
+                  <img
+                    src="./portfolio-images/web-site-logo.jpg"
+                    alt="web-site-logo"
+                    width="370"
+                  />
+                  <p class="hidden-card__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-description__name">Технокряк</h2>
+                  <p class="project-description__list">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="card-set__gallery">
+              <a class="card-set__list" href="https://www.google.com.ua">
+                <div class="hidden-card">
+                  <img
+                    src="./portfolio-images/poster.jpg"
+                    alt="poster"
+                    width="370"
+                  />
+                  <p class="hidden-card__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-description__name">
+                    Постер <span lang="en"> New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="project-description__list">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="card-set__gallery">
+              <a class="card-set__list" href="https://www.google.com.ua"
+                ><div class="hidden-card">
+                  <img
+                    src="./portfolio-images/seafood.jpg"
+                    alt="seafood"
+                    width="370"
+                  />
+                  <p class="hidden-card__text">
+                    The best seafood in Zhmerynka.
+                  </p>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-description__name">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="project-description__list">Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="card-set__gallery">
+              <a class="card-set__list" href="https://www.google.com.ua"
+                ><div class="hidden-card">
+                  <img
+                    src="./portfolio-images/headset.jpg"
+                    alt="headset"
+                    width="370"
+                  />
+                  <p class="hidden-card__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-description__name">
+                    Проєкт <span lang="en">Prime</span>
+                  </h2>
+                  <p class="project-description__list">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="card-set__gallery">
+              <a class="card-set__list" href="https://www.google.com.ua"
+                ><div class="hidden-card">
+                  <img
+                    src="./portfolio-images/boxes.jpg"
+                    alt="boxes"
+                    width="370"
+                  />
+                  <p class="hidden-card__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-description__name">
+                    Проєкт <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="project-description__list">Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="card-set__gallery">
+              <a class="card-set__list" href="https://www.google.com.ua"
+                ><div class="hidden-card">
+                  <img
+                    src="./portfolio-images/website-inspiration.jpg"
+                    alt="website-inspiration"
+                    width="370"
+                  />
+                  <p class="hidden-card__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="project-description">
+                  <h2 lang="en" class="project-description__name">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="project-description__list">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="card-set__gallery">
+              <a class="card-set__list" href="https://www.google.com.ua"
+                ><div class="hidden-card">
+                  <img
+                    src="./portfolio-images/le-magazine.jpg"
+                    alt="le-magazine"
+                    width="370"
+                  />
+                  <p class="hidden-card__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-description__name">
+                    Видання <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="project-description__list">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="card-set__gallery">
+              <a class="card-set__list" href="https://www.google.com.ua"
+                ><div class="hidden-card">
+                  <img
+                    src="./portfolio-images/project-lab.jpg"
+                    alt="project-lab"
+                    width="370"
+                  />
+                  <p class="hidden-card__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-description__name">
+                    Проєкт <span lang="en">LAB</span>
+                  </h2>
+                  <p class="project-description__list">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="card-set__gallery">
+              <a class="card-set__list" href="https://www.google.com.ua"
+                ><div class="hidden-card">
+                  <img
+                    src="./portfolio-images/growing-business-logo.jpg"
+                    alt="growing-business-logo"
+                    width="370"
+                  />
+                  <p class="hidden-card__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-description__name">
+                    Проєкт <span lang="en">Growing Business</span>
+                  </h2>
+                  <p class="project-description__list">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <a class="logo" href="./index.html"
+            >Web<span class="logo--white">Studio</span></a
+          >
+          <address>
+            <ul class="footer-address">
+              <li class="footer-address__list">
+                <a
+                  class="footer-address__link"
+                  href="https://goo.gl/maps/nPAizEGp3tmb85P76"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="footer-address__list">
+                <a
+                  class="footer-address__contact"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-address__list">
+                <a class="footer-address__contact" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-socials">
+          <p class="footer-socials__title">Приєднуйтесь</p>
+          <ul class="list icon-social">
+            <li>
+              <a href="https://www.instagram.com/" class="footer-socials__link">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" class="footer-socials__link">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" class="footer-socials__link">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" class="footer-socials__link">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form name="email" class="footer-form">
+          <p class="footer-socials__title">Підпишіться на розсилку</p>
+          <div class="footer-input">
+            <label>
+              <input
+                class="input-type"
+                type="email"
+                placeholder="E-mail"
+                required
+            /></label>
+            <button type="submit" class="footer-form__button">
+              Підписатися
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
