@@ -1572,9 +1572,15 @@ img {
   }
 }
 
-.card-set__list {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
+@media (min-width: 768px) {
+  .card-set__list {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .card-set__list {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .card-set__link {

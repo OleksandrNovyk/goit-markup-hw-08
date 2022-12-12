@@ -9,7 +9,13 @@
 }
 
 .card-set__list {
-  flex-basis: calc((100% - 60px) / 3);
+  // flex-basis: calc((100% - 60px) / 3);
+  @media (min-width: 768px) {
+    width: calc((100% - 1 * 30px) / 2);
+  }
+  @media (min-width: 1200px) {
+    width: calc((100% - 2 * 30px) / 3);
+  }
 }
 .card-set__link {
   display: block;
