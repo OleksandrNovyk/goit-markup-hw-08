@@ -1,15 +1,21 @@
 .portfolio {
-    @extend %section;
+  @extend %section;
 }
 .filter {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+  }
 }
 .filter__list {
-	margin-right: 8px;
+  margin-right: 8px;
 
-    &:last-child {
-	margin-right: 0;
-}
+  &:last-child {
+    margin-right: 0;
+  }
 }

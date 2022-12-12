@@ -96,7 +96,8 @@
 }
 .footer-contacts__adress:hover,
 .footer-contacts__adress:focus {
-  color: var(--accent-color);
+  // color: var(--accent-color);
+  opacity: 0.8;
 }
 .footer-contacts__link {
   color: rgba(255, 255, 255, 0.6);
