@@ -1578,6 +1578,7 @@ img {
 
 .card-set__overlay {
   position: absolute;
+  top: 0;
   left: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
