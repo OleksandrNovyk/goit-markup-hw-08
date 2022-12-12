@@ -93,10 +93,16 @@
   color: var(--title-color);
 
   // text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.mobile-menu__span {
-  color: var(--accent-color);
-}
+// .mobile-menu__span {
+//   color: var(--accent-color);
+// }
+
 .mobile-contacts {
   margin-bottom: 64px;
 }

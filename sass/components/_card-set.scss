@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    justify-content: center;
+  }
 }
 
 .card-set__list {
@@ -26,13 +30,14 @@
   top: 0;
   left: 0;
   transform: translateY(100%);
+
   width: 100%;
   height: 100%;
   padding: 63px 24px;
+
   background-color: rgba(33, 150, 243, 0.9);
   transition: 250ms var(--timing-function);
 }
-
 .card-set__overlay-description {
   font-family: "Roboto";
   font-weight: 400;
@@ -53,6 +58,11 @@
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 176px;
+    height: 108px;
+  }
 }
 .card-set__projects {
   color: var(--primary-text-color);
