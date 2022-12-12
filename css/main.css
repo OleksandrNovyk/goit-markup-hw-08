@@ -1602,6 +1602,7 @@ img {
 .card-set__wrapper {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .card-set__title {
