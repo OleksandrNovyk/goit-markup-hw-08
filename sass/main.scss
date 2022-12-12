@@ -1,20 +1,27 @@
-//utils styles
-
+// utils styles//
 @import "./utils/variables";
+@import "./utils/placeholders";
 
-//base styles
+// base styles//
+@import "./base/body";
+@import "./base/reset";
+@import "./base/visualy-hidden";
+@import "./base/normalize";
 
-@import "./base/base";
-
-//components
-
-@import "./components/logo";
+// components styles//
+@import "./components/container";
 @import "./components/header";
+@import "./components/navigation";
 @import "./components/hero";
 @import "./components/modal";
+@import "./components/socials";
 @import "./components/specialities";
-@import "./components/our-work";
+@import "./components/section-title";
+@import "./components/about";
 @import "./components/team";
 @import "./components/clients";
-@import "./components/portfolio";
 @import "./components/footer";
+@import "./components/button";
+@import "./components/filter";
+@import "./components/card-set";
+@import "./components/burger-menu";

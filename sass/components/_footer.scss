@@ -1,156 +1,159 @@
 .footer {
-  background-color: var(--footer-title-color);
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-footer);
 }
-
-.footer-address {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.footer-address__list:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer-address__link {
-  color: var(--main-title-color);
-  line-height: 1.71;
-  font-style: normal;
-  text-decoration: none;
-  margin-bottom: 9px;
-
-  &:hover,
-  &:focus {
-    color: var(--main-title-color);
-    opacity: 0.8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
   }
 }
 
-.footer-address__contact {
-  color: var(--main-title-color);
-  opacity: 0.6;
-  line-height: 1.71;
-  font-style: normal;
-  font-weight: 500;
-  text-decoration: none;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: var(--secondary-title-color);
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-.footer .container {
-  display: flex;
-  column-gap: 70px;
-  align-items: baseline;
-}
-
-.footer-socials__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  column-gap: 10px;
-}
-
-.footer-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.footer-socials__title {
-  margin-bottom: 20px;
-  font-family: "Roboto";
+.footer-logo {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--background-footer);
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.03em;
   font-weight: 700;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: var(--button-primary-color);
+  font-size: 24px;
+  line-height: 1.17;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .footer-logo .link {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
-.footer-socials__link {
-  background: rgba(255, 255, 255, 0.1);
-  fill: var(--main-title-color);
-  width: 44px;
-  height: 44px;
+.footer-logo__span {
+  color: var(--white-color);
+  transition: color 250ms var(--timing-function);
+
+  @media screen and(min-width: 1200px) {
+    margin-right: 156px;
+  }
+}
+.footer-logo__span:hover,
+.footer-logo__span:focus {
+  color: var(--accent-color);
+}
+
+.footer__title {
+  display: block;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1199.98px) {
+    text-align: center;
+  }
+}
+.socials__link-footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: var(--third-title-color);
-    fill: var(--button-primary-color);
-  }
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+  transition: var(--background-color) 250ms var(--timing-function);
+}
+.socials__link-footer:hover,
+.socials__link-footer:focus {
+  background-color: var(--accent-color);
 }
 
+.footer__contacts {
+  font-style: normal;
+  line-height: 1.71;
+}
+.footer-contacts__item:last-child {
+  margin-bottom: 0;
+}
+.footer-contacts__item {
+  margin-bottom: 9px;
+}
+.footer-contacts__adress {
+  color: var(--white-color);
+  line-height: 1.71;
+  display: inline-block;
+  transition: color 250ms var(--timing-function);
+}
+.footer-contacts__adress:hover,
+.footer-contacts__adress:focus {
+  color: var(--accent-color);
+}
+.footer-contacts__link {
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+}
+.footer-socials {
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    margin-right: 70px;
+    margin-bottom: 0;
+    text-align: start;
+  }
+}
 .footer-form {
   margin-left: auto;
 }
-
-.footer-input {
-  display: flex;
-}
-
-.footer-input input {
-  width: 358px;
+.footer-form__email {
+  display: block;
+  width: 100%;
   height: 50px;
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: var(--footer-title-color);
-  outline: none;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  color: var(--white-color);
+  background-color: var(--background-footer);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 
-  & input:hover,
-  & input:focus,
-  & input:active {
-    border: 1px solid var(--third-title-color);
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
-.input-type {
-  padding-left: 16px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (max-width: 1199.98px) {
+  .footer-social-links {
+    margin-bottom: 60px;
+  }
 }
-
-.footer-form__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 50px;
-  width: 200px;
-  margin-left: 12px;
-  background-color: var(--third-title-color);
-  color: var(--button-primary-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  &::after {
-    content: "";
-    width: 24px;
-    height: 24px;
-    margin-left: 12px;
-    background-image: url(../images/send.svg);
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__wrapper {
+    display: flex;
   }
 }
