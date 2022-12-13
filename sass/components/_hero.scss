@@ -1,9 +1,11 @@
 .hero {
   text-align: center;
   background-color: var(--background-footer);
-  padding: 118px 0;
+  padding-top: (118px+80px);
+  padding-bottom: 118px;
   @media screen and (min-width: 1200px) {
-    padding: 200px 0;
+    padding-top: (200px+80px);
+    padding-bottom: 200px;
   }
 }
 

@@ -1,18 +1,29 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 480px) and (max-width: 767.99px) {
     justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+    justify-content: start;
   }
 }
 
 .card-set__list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   // flex-basis: calc((100% - 60px) / 3);
   @media (min-width: 768px) {
     width: calc((100% - 1 * 30px) / 2);
   }
+  justify-content: start;
+
   @media (min-width: 1200px) {
     width: calc((100% - 2 * 30px) / 3);
   }

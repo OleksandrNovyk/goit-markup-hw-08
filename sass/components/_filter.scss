@@ -1,21 +1,40 @@
 .portfolio {
-  @extend %section;
+  // @extend %section;
+
+  @media screen and (min-width: 480px) and (max-width: 767.99px) {
+    padding-top: (60px+60px);
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+    padding-top: (60px+80px);
+    padding-bottom: 60px;
+  }
 }
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 480px) and (max-width: 1199.99px) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
+    justify-content: center;
   }
-}
-.filter__list {
-  margin-right: 8px;
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: center;
   }
 }
+// .filter__list {
+//   margin-right: 8px;
+
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
