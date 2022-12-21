@@ -38,10 +38,12 @@
 .card-set__link:hover .card-set__overlay {
   transform: translateY(0);
 }
+
 .card-set__thumb {
   position: relative;
   overflow: hidden;
 }
+
 .card-set__overlay {
   position: absolute;
   top: 0;
@@ -55,6 +57,7 @@
   background-color: rgba(33, 150, 243, 0.9);
   transition: 250ms var(--timing-function);
 }
+
 .card-set__overlay-description {
   font-family: "Roboto";
   font-weight: 400;
@@ -63,11 +66,13 @@
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
+
 .card-set__wrapper {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
+
 .card-set__title {
   color: var(--title-color);
   font-weight: 700;
@@ -81,6 +86,7 @@
     height: 108px;
   }
 }
+
 .card-set__projects {
   color: var(--primary-text-color);
   font-weight: 400;
